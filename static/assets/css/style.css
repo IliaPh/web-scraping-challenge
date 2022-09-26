@@ -1,0 +1,137 @@
+
+
+#banner {
+    /* The image used */
+    height: 20rem;
+    padding-top: 5rem;
+    color: aliceblue;
+    text-align: center; 
+    font-family: "Montserrat-Bold";  
+    
+  }
+
+  .button-scrolly{
+    color: rgb(5, 45, 71);
+    font-family: "Montserrat-Bold";
+  }
+  
+  .button-scrolly:hover{ color: #06112e;
+
+  }
+  
+  #f_cap{
+    text-align: center;
+  }
+
+  #two,#one,#three {
+      padding: 5%;
+      font-family: "Montserrat-Bold";
+  }
+
+  .news-row {
+    width: 40%;
+    margin: 10% auto 10% auto;
+    text-align: left;
+  }
+ .fact{
+   background-color: #d8e5f0;
+ }
+
+
+  .nasa-img{
+    background-color: #1e40a000;
+    position:static; 
+  }
+
+  .news-h2 {
+    color: #0f0f0f;
+    font-family: "Montserrat-Bold";
+    font-size: 2rem;
+    font-weight: normal;
+    padding-bottom: 11px;
+    text-align: center;
+  }
+
+  .box1 {
+   
+    margin-bottom: 3rem; 
+    
+    padding: 12px ; 
+    color:black;
+    background-color: #15558600;
+  }
+  .box2 {
+    margin-top: 1rem; 
+    margin-bottom: 3rem; 
+    padding: 10px ; 
+    color:black;
+    background-color: #1666a300;
+    
+  }
+
+  .main-style2{
+    background-color: #818486;
+
+  }
+
+  .nasa-img{
+  height: 100%;
+  width:100%; 
+  
+  margin-top: 1rem;
+  }
+
+  .styled-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: "Montserrat-Bold" sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(12, 12, 12, 0.15);
+}
+
+th  {
+  background-color: #0c1427;
+  color: #ffffff;
+  text-align: left;
+}
+
+th,
+td {
+    padding: 12px 15px;
+}
+tr {
+  border-bottom: 1px solid #dddddd;
+}
+tr:nth-of-type(even) {
+  background-color: #f1e2e2;
+}
+tr:last-of-type {
+  border-bottom: 2px solid #dfd9d9;
+}
+tr.active-row {
+  font-weight: bold;
+  color: #061131;
+}
+
+.image-fit{
+  height: 100%;
+  width:100%; 
+  
+  margin-top: 1rem;
+}
+
+#footer{
+  margin-top: 2.5rem 1rem;
+  text-align: center;
+  color: #e7ebee;
+}
+.social-icon {
+  color: #e7ebee;
+  border-color: black;
+  margin:0 .5rem; 
+}
+
+.social-icon:hover,#footer:hover,#nav-brand:hover,#nav-text:hover,.t-Data:hover {
+  color: #f3c7b2;
+}
+

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mission to Mars</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="static\assets\css\style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: url(https://images.unsplash.com/photo-1599045151332-ff2587f03eb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed"></body>
+  
+
+<!-- Header--> 
+  
+    <section id="banner">
+      <div class="container-fluid">
+        <div class="inner">
+          <span class="icon solid major fa-cloud"></span>
+          <span class="icon solid major fa-cat-space"></span>
+          <h1>Get the latest <strong>Nasa news!</strong><br /></h1><br>
+          <ul class="actions special">
+            
+          <li><button data-name="div-1" type="button" class="btn btn-light"><a href="/scrape" class="button-scrolly">Scrape new Data</a></button></li>  <!--/scrape-->
+        </ul>
+        </div>        
+      </div>
+    </section>
+
+
+<!-- One -->
+<section id="one">
+  <div class="container div-1">
+    <div class="row fact">
+      <div class="col-lg-12 col-md-12">
+        <br>
+        <h3 class="t-Data2" style="text-align: center;">Latest Mars news!</h3>
+        <hr>
+      </div>
+
+    </div>
+    <div class="row fact">
+      <div class="col-lg-4 col-md-12">
+        <div class="box1">
+          <span class="rounded"><img class="img-thumbnail nasa-img" src={{listings.news_img}} alt="" /></span>
+        </div>
+
+      </div>
+      <div class="col-lg-8 col-md-12">
+        <div class="box2">
+          <h4 class="t-Data">{{listings.news_title}}</h4><br>
+
+          <p>{{listings.news_p}} ({{listings.news_date}})</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Two -->
+<section id="two">
+  <div class="container div-1">
+    <div class="row fact">
+      <div class="col-lg-12 col-md-12">
+        <br>
+        <h3 class="t-Data2" style="text-align: center;">Facts about Mars!</h3>
+        <hr>
+      </div>
+
+    </div>
+    <div class="row fact">
+      <div class="col-lg-4 col-sm-12">
+        <div class="box1">
+          <span ><img class="nasa-img" src={{listings.feuture_img_url}} alt="" /><figcaption class="figure-caption" id="f_cap">Featured Mars Image</figcaption></span>
+          <br><p>​Mars is the fourth planet from the Sun, a dusty, cold, desert world with a very thin atmosphere. Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past..</p>
+        </div>
+
+      </div>
+      <div class="col-lg-8 col-sm-12">
+        <div class="box2 table-responsive" style="overflow-x:auto; overflow-y:auto; max-height:auto; max-width: auto;">
+          
+
+          <table class="styled-table">{{listings.tables|safe}}</table><figcaption class="figure-caption" id="f_cap">Earth-Mars Comparison</figcaption>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Three -->
+<section id="three">
+  <div class="container div-1">
+    <div class="row fact">
+      <div class="col-lg-12 col-md-12">
+        <br>
+        <h3 class="t-Data2" style="text-align: center;">Mars Hemispheres</h3><hr>
+        <p>The two hemispheres of Mars are more different from any other planet in our solar system. Non-​volcanic, flat lowlands characterise the northern hemisphere, while highlands punctuated by countless volcanoes extend across the southern hemisphere.</p>        
+      </div>
+    </div>
+    <div class="row fact">
+      <div class="col-lg-3 col-sm-12">
+        <div class="box1">
+          <span><img class="image-fit" src={{listings.img_url_0}} alt="" /></span>
+          <h6>{{listings.title_0}}</h6>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <div class="box1">
+          <span><img class="image-fit" src={{listings.img_url_1}} alt="" /></span>
+          <h6>{{listings.title_1}}</h6>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <div class="box1">
+          <span><img class="image-fit" src={{listings.img_url_2}} alt="" /></span>
+          <h6>{{listings.title_2}}</h6>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <div class="box1">
+          <span><img class="image-fit" src={{listings.img_url_3}} alt="" /></span>
+          <h6>{{listings.title_3}}</h6>
+        </div>
+      </div>
+      
+
+    </div>
+
+  </div>
+</section>
+
+   
+</body>
+</html>
