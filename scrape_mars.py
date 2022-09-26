@@ -20,7 +20,7 @@ def scrape():
     data_dict={}
     
     #### NASA Mars News
-    # Go to the page we wish to scrape
+    # Go to the page that will be scraped
     browser.visit(url_list[0])
     
     # Return all the HTML on page

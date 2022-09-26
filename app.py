@@ -21,11 +21,11 @@ def scraper():
     nasatable = mongo.db.nasaData
     mongo.db.nasaData.drop()
     
-    # update the listings with the data that is being scraped
+    # Update the listings with the data that is being scraped
     listings_data = scrape_mars.scrape()
     nasatable.update_one({}, {"$set": listings_data}, upsert=True)
     
-    # return a message to our page so we know it was successful
+    # Return a message to the page to check it was successful
     return redirect("/")
 
 
